@@ -1,0 +1,101 @@
+<!DOCTYPE HTML>
+<!--
+	Spectral by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+		<title>Projects - Department Predictor</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+	</head>
+	<body class="is-preload">
+
+		<!-- Page Wrapper -->
+			<div id="page-wrapper">
+
+				<!-- Header -->
+					<header id="header">
+						<h1><a href="index.html">Anas Alkhalidi</a></h1>
+						<nav id="nav">
+							<ul>
+								<li class="special">
+									<a href="#menu" class="menuToggle"><span>Menu</span></a>
+									<div id="menu">
+										<ul>
+											<li><a href="index.html">Home</a></li>
+											<li><a href="Projects.html">Projects</a></li>
+											<li><a href="About%20me.html">About</a></li>
+										</ul>
+									</div>
+								</li>
+							</ul>
+						</nav>
+					</header>
+
+				<!-- Main -->
+					<article id="main">
+						<header style="background-image: url('python logo 2.png')">
+							<h2>Department Predictor</h2>
+							<p>A tool that predicts the designated department for a particular university course.</p>
+						</header>
+						<section class="wrapper style5">
+							<div class="inner">
+
+								<h2>Department predictor</h2>
+								<img src="course%20estimator.png" style="margin-bottom: 50px">
+								<p>This project uses web scraping <strong>(BeautifulSoup and urllib2)</strong> to retrieve all undergraduate courses offered from a university
+									(Istanbul Sehir University) and train the data to correctly predict the right department for a particular selected course.</p>
+								<p>When the user selects from the first listbox titled "Individual Courses", they will get three results as shown in the GUI above. Each
+								prediction of the three will have a score. This score reflects the program's estimation after training. The colors reflect the correct and the incorrect department
+									for the course selected. Green reflects the correct course in reality, and red otherwise. This means that if the program gives the highest score
+									to the green department code, then the data has been trained well. otherwise, the data will be required to undergo more training.
+								</p>
+								<p>Furthermore, the program allows users to perform an accuracy analysis report for each department listed.
+									When the user selects one of the departments from the second listbox (titled "Accuracy Analysis"), the textbox on the right will show
+									a <strong>report</strong> with the following information regarding the selected department:
+								<ul>
+								<li>Accuracy: this is computed as the percentage of the accurately predicted courses for that department.</li>
+								<li>Total Number of Courses: The total number of offered courses in Spring semester under this department.</li>
+								<li>Correctly Predicted: Amount of times the department was correctly predicted by different courses</li>
+								<li>Incorrectly predicted: Amount of times the department was incorrectly predicted by different courses. These incorrect predictions will also be displayed below as shown in the GUI</li>
+
+							</ul>
+
+								<a style="color: blue" href="https://github.com/anaskhaldi99/PythonCodes/blob/main/Department%20predictor.py">This Project's GitHub Link</a>
+
+
+								<hr />
+							</div>
+						</section>
+					</article>
+
+				<!-- Footer -->
+					<footer id="footer">
+						<ul class="icons">
+							<li><a href="https://www.linkedin.com/in/anas-alkhaldi-44a4761aa/" class="icon brands fa-linkedin"><span class="label">LinkedIn</span></a></li>
+							<li><a href="mailto: anaskhaldi99@gmail.com" class="icon solid fa-envelope"><span class="label">Email</span></a></li>
+							<li><a style="border-bottom: none" href="https://github.com/anaskhaldi99"><i class="fab fa-github"></i></a></li>
+
+						</ul>
+						<ul class="copyright">
+							<li>&copy; Anas Alkhalidi</li>
+						</ul>
+					</footer>
+
+			</div>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.scrollex.min.js"></script>
+			<script src="assets/js/jquery.scrolly.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+
+	</body>
+</html>
